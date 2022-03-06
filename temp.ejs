@@ -1,0 +1,12 @@
+import request from '@/utils/request'
+
+<% for (const {comment,name,arg,url,method,param} of data) { %>
+<% if (comment) { %>// <%- comment %><% } %>
+export function <%- name %>(<% if (arg) {%> <%- arg %> <% } %>){
+  return request({
+    url: <%- url %>,
+    method: "<%- method %>",
+    <% if (param) { %>param: <%- param %><% } %>
+  })
+}
+<% } %>
