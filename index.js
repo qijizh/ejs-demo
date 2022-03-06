@@ -1,7 +1,3 @@
-// export_function("listJobLog", "/monitor/jobLog/list", "get", query);
-// export_function("delJobLog", "/monitor/jobLog/jobLog", "delete");
-// export_function("cleanJobLog", "/monitor/jobLog/clean", "delete");
-
 let data = [
   {
     name: "listJobLog",
